@@ -1,5 +1,6 @@
 # Name: Todd Louison
-## Year: Junior
-## Major: Computer Science
+### Year: Junior
+### Major: Computer Science
+### Github account: TLouison
 
-![Charlie](images/charlie.png)
+![Charlie](charlie.png)
