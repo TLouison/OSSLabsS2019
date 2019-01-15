@@ -3,4 +3,4 @@
 ### Major: Computer Science
 ### Github account: TLouison
 
-![Charlie](charlie.png)
+![Charlie](images/charlie.jpg)
