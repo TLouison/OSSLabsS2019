@@ -38,3 +38,8 @@ From Chapter 3 of Free Culture, I learned a great deal about the perils of open 
 
 ## Blockly Puzzle Solved
 ![Blockly Puzzle Solved](images/BlocklySolved.png)
+
+# Reflection
+## Interesting Open Source Project: ```eliotstocker/Light-Controller```
+
+I am very interested in home lighting and automation, and this project has a beautiful user interface as well as promises to be compatible with a variety of lighting solutions. My long-term goal for my career is to do something with IoT and smart lighting control, so this project immediately jumped out at me when I found it. It appears to have been abandoned for about two years, but I am sure there are more tweaks and updates that could be done with it.
