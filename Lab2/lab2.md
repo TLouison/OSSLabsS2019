@@ -1,6 +1,6 @@
 # Open Source Lab 2
 
-![good stuff](comparison.png)
+![good stuff](images/comparison.png)
 
 Link to my fork: https://github.com/TLouison/Spoon-Knife
 
