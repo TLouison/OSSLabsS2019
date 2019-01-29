@@ -1,5 +1,13 @@
 # Lab 3
 
+# Part 0
+
+![Latex](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab3/LaTeX.png)
+
+### Hadamard Matrix
+
+![square](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab3/square.png)
+
 # Part 1
 
 ## Five Projects
@@ -63,3 +71,6 @@ Red Army App: https://www.youtube.com/watch?v=nFkt7IjXUms&feature=youtu.be
 
 # Part 2
 
+![passed testing](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab3/unitTestingPassed.png)
+
+Code can be found here: https://github.com/TLouison/OSSLabsS2019/tree/master/Lab3/markdown.py-master
