@@ -1,5 +1,7 @@
 # Lab 3
 
+# Part 1
+
 ## Five Projects
 
 ### OpenCircuits
@@ -43,14 +45,21 @@ Gitstats gave us different lines of code than when we ran the git command in bas
 
 ## Gource
 
-OpenCircuits:
+OpenCircuits: ![open circuits](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab3/OpenCircuit.png)
 
-Organizer:
+Organizer: https://www.youtube.com/watch?v=RNQ1Mi7HG5M&feature=youtu.be
 
 PhoneControllers: https://youtu.be/AL1VwdgS-ck
 
 - It appears the main leader is all of them because there haven't been enough commits to prove otherwise.
 
-Pipeline:
+Pipeline: <https://www.youtube.com/watch?v=_rcXZxHJkRo&feature=youtu.be>
 
-Red Army App:
+Red Army App: https://www.youtube.com/watch?v=nFkt7IjXUms&feature=youtu.be
+
+- Not enough commits to tell
+
+
+
+# Part 2
+

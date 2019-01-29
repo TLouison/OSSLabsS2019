@@ -12,6 +12,9 @@
 import fileinput
 import re
 
+global openBlockQuote
+global willUnflag
+
 def convertStrong(line):
   line = re.sub(r'\*\*(.*)\*\*', r'<strong>\1</strong>', line)
   line = re.sub(r'__(.*)__', r'<strong>\1</strong>', line)
@@ -23,24 +26,55 @@ def convertEm(line):
   return line
 
 def convertH1(line):
-  line = re.sub(r'#(.*)', r'<h1>\1</h1>', line)
+  line = re.sub(r'# (.+)', r'<h1>\1</h1>', line)
   return line
 
 def convertH2(line):
-  line = re.sub(r'##(.*)', r'<h2>\1</h2>', line)
+  line = re.sub(r'## (.+)', r'<h2>\1</h2>', line)
   return line
 
 def convertH3(line):
-  line = re.sub(r'###(.*)', r'<h3>\1</h3>', line)
+  line = re.sub(r'### (.+)', r'<h3>\1</h3>', line)
   return line
 
 def convertBlock(line):
-  line = re.sub(r'>_(.*)_', r'<blockquote>\1', line)
-  return line
+  global openBlockQuote
+  global willUnflag
 
+  realFirst = line[0]
+
+  if openBlockQuote == False:
+    line = re.sub(r'> (.+)', r'<blockquote>\1', line)
+  else:
+    line = re.sub(r'> (.+)', r'\1', line)
+
+  if (realFirst != '>' and openBlockQuote == True):
+    print '</blockquote>'
+    willUnflag = True
+  elif 'blockquote' in line:
+    openBlockQuote = True
+  return line
+  
+
+openBlockQuote = False
+willUnflag = False
 for line in fileinput.input():
   line = line.rstrip() 
+  
+
+  line = convertBlock(line)
   line = convertStrong(line)
   line = convertEm(line)
-  print '<p>' + line + '</p>',
+  line = convertH3(line)
+  line = convertH2(line)
+  line = convertH1(line)
+ 
+  if openBlockQuote == False:
+    print '<p>' + line + '</p>'
+  else:
+    print line + '\n'
+
+  if willUnflag == True:
+    openBlockQuote = False
+    willUnflag = False
 

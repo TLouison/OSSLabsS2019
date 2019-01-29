@@ -36,6 +36,42 @@ class TestMarkdownPy(unittest.TestCase):
                 run_markdown('**this should be wrapped in strong tags**'),
                 '<p><strong>this should be wrapped in strong tags</strong></p>')
 
+    def test_h1(self):
+        '''
+        Lines started by single hashtags should be wrapped in 'h1' tags
+        ''' 
+        self.assertEqual(
+                run_markdown('# this should be wrapped in h1 tags'), 
+                '<p><h1>this should be wrapped in h1 tags</h1></p>'
+        )
+
+    def test_h2(self):
+        '''
+        Lines started by double hashtags should be wrapped in 'h2' tags
+        ''' 
+        self.assertEqual(
+                run_markdown('## this should be wrapped in h2 tags'), 
+                '<p><h2>this should be wrapped in h2 tags</h2></p>'
+        )
+
+    def test_h3(self):
+        '''
+        Lines started by triple hashtags should be wrapped in 'h3' tags
+        ''' 
+        self.assertEqual(
+                run_markdown('### this should be wrapped in h3 tags'), 
+                '<p><h3>this should be wrapped in h3 tags</h3></p>'
+        )
+
+    def test_block(self):
+        '''
+        Lines starting with > should be block quotes
+        '''
+        self.assertEqual(
+            run_markdown('> this is a blockquote\n this is not'),
+            '<blockquote>this is a blockquote\n\n</blockquote>\n this is not'
+        )
+
 if __name__ == '__main__':
     unittest.main()
 
