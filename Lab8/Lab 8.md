@@ -20,7 +20,7 @@
 
 
 
-**3) Go back to the dashboard and find your submission. Are there any errors? If so, are they consistent with other projects using your architecture? If not, fix any sugnificant errors in your system and resubmit to the dashboard until your system performs similarly to equivalent architectures.**	![CTest 1](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab8/Screen Shot 2019-03-22 at 1.22.45 PM.png)
+**3) Go back to the dashboard and find your submission. Are there any errors? If so, are they consistent with other projects using your architecture? If not, fix any sugnificant errors in your system and resubmit to the dashboard until your system performs similarly to equivalent architectures.**	![CTest 1](ctest1.png)
 
 ​	There was 1 error, which is consistent with other projects using my architecture.
 
@@ -28,15 +28,15 @@
 
 Cannot send to dashboard. Output is as follows from terminal:
 
-![CTest 2](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab8/Screen Shot 2019-03-22 at 1.26.24 PM.png)
+![CTest 2](ctest2.png)
 
 ## Checkpoint 4
 
 Successfully fixed the test case
 
-![CTest 3](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab8/Screen Shot 2019-03-22 at 2.39.45 PM.png)
+![CTest 3](ctest3.png)
 
 Here is a screenshot of the entire suite running:
 
-![CTest 4](/Users/todd/Documents/School/Junior/S2/OSS/Labs/Lab8/Screen Shot 2019-03-22 at 2.41.27 PM.png)
+![CTest 4](ctest4.png)
 
